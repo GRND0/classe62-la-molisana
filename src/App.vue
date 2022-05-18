@@ -4,7 +4,7 @@
     <AppHeader />
     <!-- Main -->
     <main>
-      Questo è main
+      <ProductsList />
     </main>
 
     <!-- Footer -->
@@ -15,12 +15,14 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
+import ProductsList from "./components/ProductsList.vue";
 
 export default {
   name: 'App',
   components: {
     AppHeader,
-    AppFooter
+    AppFooter,
+    ProductsList
   }
 }
 </script>
@@ -28,12 +30,6 @@ export default {
 <style lang="scss">
 @import "./style/common.scss";
 
-main {
-  height: 200px;
-  background-color: blue;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-}
+
 
 </style>
